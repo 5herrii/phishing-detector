@@ -4,10 +4,15 @@ import base64
 import requests
 import tldextract
 from urllib.parse import urlparse
+from dotenv import load_dotenv
+
+
 
 # =========================
 # Configuration
 # =========================
+
+load_dotenv()
 
 API_KEY = os.getenv("VT_API_KEY", "").strip()
 
