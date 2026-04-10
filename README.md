@@ -33,3 +33,6 @@ Analyzing URL: http://br-icloud.com.br
 Domain      : br-icloud.com.br
 Risk Score  : 80/100
 Verdict     : HIGH RISK
+```
+Copy `.env.example` to `.env` and add your VirusTotal API key.
+
