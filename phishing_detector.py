@@ -1,4 +1,3 @@
-import os
 import time
 import base64
 import requests
@@ -12,9 +11,11 @@ from dotenv import load_dotenv
 # Configuration
 # =========================
 
-load_dotenv()
+load_dotenv(dotenv_path=".env", encoding="utf-8")
 
 API_KEY = os.getenv("VT_API_KEY", "").strip()
+print("DEBUG API KEY:", API_KEY)
+
 
 HIGH_RISK_KEYWORDS = [
     "verify",
